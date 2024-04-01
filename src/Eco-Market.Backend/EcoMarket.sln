@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoMarket.Api", "EcoMarket.Api\EcoMarket.Api.csproj", "{4C93DEA0-819E-4194-B37F-05F4EC75D288}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoMarket.Domain", "EcoMarket.Domain\EcoMarket.Domain.csproj", "{613D3160-44F7-475C-B87D-E11C3F1474A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoMarket.Aplication", "EcoMarket.Aplication\EcoMarket.Aplication.csproj", "{ACC8932A-3278-4E55-8F44-130CDAABED5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoMarket.Infrastructure", "EcoMarket.Infrastructure\EcoMarket.Infrastructure.csproj", "{05569E64-43A5-4E5D-971C-91B182947169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoMarket.Persistence", "EcoMarket.Persistence\EcoMarket.Persistence.csproj", "{7B673D65-624F-4A08-93DF-B28D0D427DF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C93DEA0-819E-4194-B37F-05F4EC75D288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C93DEA0-819E-4194-B37F-05F4EC75D288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C93DEA0-819E-4194-B37F-05F4EC75D288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C93DEA0-819E-4194-B37F-05F4EC75D288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{613D3160-44F7-475C-B87D-E11C3F1474A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{613D3160-44F7-475C-B87D-E11C3F1474A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{613D3160-44F7-475C-B87D-E11C3F1474A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{613D3160-44F7-475C-B87D-E11C3F1474A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACC8932A-3278-4E55-8F44-130CDAABED5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACC8932A-3278-4E55-8F44-130CDAABED5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACC8932A-3278-4E55-8F44-130CDAABED5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACC8932A-3278-4E55-8F44-130CDAABED5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05569E64-43A5-4E5D-971C-91B182947169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05569E64-43A5-4E5D-971C-91B182947169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05569E64-43A5-4E5D-971C-91B182947169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05569E64-43A5-4E5D-971C-91B182947169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B673D65-624F-4A08-93DF-B28D0D427DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B673D65-624F-4A08-93DF-B28D0D427DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B673D65-624F-4A08-93DF-B28D0D427DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B673D65-624F-4A08-93DF-B28D0D427DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
