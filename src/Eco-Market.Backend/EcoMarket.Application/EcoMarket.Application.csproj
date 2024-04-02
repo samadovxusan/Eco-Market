@@ -4,7 +4,11 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>EcoMarket.Domaiin</RootNamespace>
+        <RootNamespace>EcoMarket.Applicatioon</RootNamespace>
     </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EcoMarket.Domain\EcoMarket.Domain.csproj" />
+    </ItemGroup>
 
 </Project>

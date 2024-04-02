@@ -1,11 +1,12 @@
 ﻿using System;
 
-namespace EcoMarket.Domain.Common.Entities;
-
-public interface IDeletionAuditableEntity
+namespace EcoMarket.Domain.Common.Entities
 {
-    /// <summary>
-    /// Gets or sets the ID of the user who deleted the entity.
-    /// </summary>
-    Guid? DeletedByUserId { get; set; }
+    public interface IDeletionAuditableEntity
+    {
+        /// <summary>
+        /// Gets or sets the ID of the user who deleted the entity.
+        /// </summary>
+        Guid? DeletedByUserId { get; set; }
+    }
 }

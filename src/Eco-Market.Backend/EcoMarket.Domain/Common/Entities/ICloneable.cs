@@ -1,9 +1,11 @@
-﻿namespace EcoMarket.Domain.Common.Entities;
-
-public interface ICloneable<out TClone> 
+﻿
+namespace EcoMarket.Domain.Common.Entities
 {
-    /// <summary>
-    /// Creates a clone of the object.
-    /// </summary>
-    TClone Clone();
+    public interface ICloneable<out TClone> 
+    {
+        /// <summary>
+        /// Creates a clone of the object.
+        /// </summary>
+        TClone Clone();
+    }
 }
