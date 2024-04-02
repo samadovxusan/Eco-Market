@@ -5,11 +5,11 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{7B673D65-624F-4A08-93DF-B28D0D427DF4}</ProjectGuid>
+        <ProjectGuid>{ACC8932A-3278-4E55-8F44-130CDAABED5B}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>EcoMarket.Persistence</RootNamespace>
-        <AssemblyName>EcoMarket.Persistence</AssemblyName>
+        <RootNamespace>EcoMarket.Aplication</RootNamespace>
+        <AssemblyName>EcoMarket.Aplication</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
