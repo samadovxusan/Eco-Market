@@ -14,8 +14,14 @@ public class Client: AuditableEntity
     /// Gets or sets the last name of the client.
     /// </summary>
     public string LastName { get; set; } = default!;
+    public string BirthDate { get; set; } = default!;
+    public string Email { get; set; } = default!;
+    public string PasswordHash { get; set; } = default!;
     /// <summary>
     /// Gets or sets the role of the client.
     /// </summary>
     public Role Role { get; set; }
+    
+    
+    
 }

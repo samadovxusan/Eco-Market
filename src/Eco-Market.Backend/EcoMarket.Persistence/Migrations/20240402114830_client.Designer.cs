@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EcoMarket.Persistencee.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240402110007_Initial")]
-    partial class Initial
+    [Migration("20240402114830_client")]
+    partial class client
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

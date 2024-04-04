@@ -49,7 +49,7 @@ public interface IClientService
     /// <param name="commandOptions">Options for customizing the command (optional).</param>
     /// <param name="cancellationToken">A cancellation token to cancel the asynchronous operation (optional).</param>
     /// <returns>A task representing the asynchronous operation, containing the updated client entity.</returns>
-    ValueTask<Client?> UpdateAsync(Client client,CommandOptions commandOptions = default,  CancellationToken cancellationToken = default);
+    ValueTask<Client?> UpdateAsync(Guid clientid, Client client,CommandOptions commandOptions = default,  CancellationToken cancellationToken = default);
     
     /// <summary>
     /// Asynchronously deletes a client entity by its unique identifier with the specified options.

@@ -26,11 +26,12 @@ public static partial class HostConfiguration
     /// </summary>
     /// <param name="app">Application host</param>
     /// <returns>Application host</returns>
-    public static  ValueTask<WebApplication> ConfigureAsync(this WebApplication app)
+    public static async  ValueTask<WebApplication> ConfigureAsync(this WebApplication app)
     {
+        await app.SeedDataAsync();
         app
             .UseDevtools()
             .UseExposers();
-        return new ValueTask<WebApplication>(app);
+        return app;
     }
 }

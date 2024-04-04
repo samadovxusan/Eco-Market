@@ -36,16 +36,20 @@ public class ClientController(IMediator mediator ) : ControllerBase
         return Ok(result);
     }
 
+    [HttpPost]
+    public async ValueTask<IActionResult> Create([FromBody] ClientCreateCommand command,
+                                                 CancellationToken cancellationToken)
+    {
+        var result = await mediator.Send(command, cancellationToken);
+        return Ok(result);
+    }
+
+
+
     [HttpDelete("{clientId:guid}")]
     public async ValueTask<IActionResult> DeleteById([FromRoute] Guid clientId, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new ClientDeleteByIdCommand {ClientId = clientId}, cancellationToken);
         return result ? Ok() : BadRequest();
     }
-    
-    
-    
-    
-    
-    
 }

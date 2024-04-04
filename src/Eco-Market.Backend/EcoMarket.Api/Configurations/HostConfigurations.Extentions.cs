@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using System.Text;
+using EcoMarket.Api.Data;
 using EcoMarket.Applicatioon.Clients.Mappers;
 using EcoMarket.Applicatioon.Clients.Services;
 using EcoMarket.Applicatioon.Common.Settings;
@@ -77,6 +78,13 @@ public static partial class  HostConfiguration
         builder.Services.AddMediatR(conf => {conf.RegisterServicesFromAssemblies(Assemblies.ToArray());});
         
         return builder;
+    }
+    private static async ValueTask<WebApplication> SeedDataAsync(this WebApplication app)
+    {
+        var serviceScope = app.Services.CreateScope();
+        await serviceScope.ServiceProvider.InitializeSeedAsync();
+
+        return app;
     }
 
     private static WebApplication UseExposers(this WebApplication app)

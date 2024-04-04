@@ -34,17 +34,18 @@ public class ClientService(IClientRepository clientRepository,IValidator<Client>
         {
             throw new ValidationException(validationresult.Errors);
         }
+        client.CreatedTime = DateTime.UtcNow;
         return clientRepository.CreateAsync(client,new CommandOptions() {SkipSaveChanges = false},cancellationToken);
     }
 
-    public async ValueTask<Client?> UpdateAsync(Client client, CommandOptions commandOptions = default,
+    public async ValueTask<Client?> UpdateAsync(Guid clientid,Client client, CommandOptions commandOptions = default,
                                           CancellationToken cancellationToken = default)
     {
-        var found = await GetByIdAsync(client.Id, cancellationToken: cancellationToken) ??
+        var found = await GetByIdAsync(clientid, cancellationToken: cancellationToken) ??
                     throw new InvalidOperationException();
         found.FirstName = client.FirstName;
         found.LastName = client.LastName;
-
+        found.ModifiedTime = DateTime.UtcNow;
         return await clientRepository.UpdateAsync(found, commandOptions, cancellationToken);
     }
     public ValueTask<Client?> DeleteByIdAsync(Guid clientId,CommandOptions commandOptions = default, CancellationToken cancellationToken = default)
